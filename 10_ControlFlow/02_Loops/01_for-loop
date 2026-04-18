@@ -1,0 +1,87 @@
+// Loops
+// Loops are used to repeat a block of code until a specified condition is met.
+// The most common types of loops in JavaScript are for, while, and do-while loops.
+
+// For Loop
+// The for loop is a control structure that allows you to repeat a block of code a specific number of times.
+// The syntax of a for loop is as follows:  
+/*
+for (initialization; condition; increment) {
+    // code to be executed
+}
+*/
+// The for loop consists of three parts:
+// 1. Initialization: This is executed once at the beginning of the loop. It is typically used to initialize a counter variable.
+// 2. Condition: This is evaluated before each iteration of the loop. If the condition is true, the loop continues; if it is false, the loop ends.
+// 3. Increment: This is executed after each iteration of the loop. It is typically used to update the counter variable.    
+// Example:
+
+for (let index = 0; index < 10; index++) {
+    console.log(index);
+}
+// In this example, the for loop initializes the variable index to 0, checks if index is less than 10, and increments index by 1 after each iteration.
+// The loop will print the numbers from 0 to 9.
+
+// You can also use a for loop to iterate over arrays or other iterable objects:
+
+const fruits = ["apple", "banana", "cherry"];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+// This will print each fruit in the fruits array. The loop uses the length property of the array to determine how many times to iterate.
+
+// For loops can also be nested inside each other to create more complex iterations:        
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 2; j++) {
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+// In this example, the outer loop runs 3 times (i from 1 to 3), and for each iteration of the outer loop, the inner loop runs 2 times (j from 1 to 2).
+// The output will show all combinations of i and j values. 
+
+// break and continue statements can be used within loops to control the flow of execution. 
+// The break statement exits the loop entirely, while 
+// the continue statement skips the current iteration and moves to the next one.
+
+
+// Example of break:
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log(`value of i: ${i}`);
+}
+
+// In this example, the loop will print the values of i from 0 to 4. When i reaches 5, the break statement is executed, and the loop terminates.
+
+// Example of continue:
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) {
+        console.log(`Skipping even number: ${i}`);
+        continue; // Skip even numbers
+    }
+    console.log(`value of i: ${i}`);
+}
+// In this example, the loop will print the values of i from 1 to 9, skipping the even numbers.
+// output: 
+// Skipping even number: 0
+// value of i: 1
+// Skipping even number: 2
+// value of i: 3
+// Skipping even number: 4
+// value of i: 5
+// Skipping even number: 6
+// value of i: 7
+// Skipping even number: 8
+// value of i: 9
+
+
+// You can also use a for loop to iterate over the properties of an object using the for...in syntax:
+const person = {
+    name: "Alice",
+    age: 30,
+    city: "New York"
+};
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
