@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating the DOM</title>
+  </head>
+  <body>
+    <h1>Manipulating the DOM</h1>
+    <p>
+      In this Example, we will manipulate the DOM by changing the content of
+      elements.
+    </p>
+    <div>
+      <hr />
+      <h3>Original Text</h3>
+      <p>This is a paragraph.</p>
+      <hr />
+      <span>
+        <h3>After using textContent :</h3>
+        <pre>
+            <code>
+                paragraph.textContent = "The text has been changed!";
+            </code>
+        </pre>
+      </span>
+      <span>
+        <h4>Result:</h4>
+        The text has been changed!</span
+      >
+      <hr />
+
+      <h3>After using innerHTML</h3>
+      <pre>
+        <code>
+            paragraph.innerHTML = "The text has been changed! &lt;strong&gt;This is bold.&lt;/strong&gt;"
+        </code>
+      </pre>
+      <p>Result: The text has been changed! <strong>This is bold.</strong></p>
+
+      <hr />
+      <h3>After using innerText</h3>
+      <pre>
+        <code>
+            paragraph.innerText = "The text has been changed! This will not be bold."
+        </code>
+      </pre>
+      <p>
+        The text has been changed! &lt;strong&gt;This will not be
+        bold.&lt;/strong&gt;
+      </p>
+    </div>
+    <!-- the paragraph element where dom manipulation will occur -->
+    <p id="paragraph">This is a paragraph.</p>
+    <!-- <button id="changeTextButton">Change Text</button> -->
+
+    <script src="manipulating.js"></script>
+  </body>
+</html>
