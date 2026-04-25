@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Events</h1>
+      <p>
+        Events are actions or occurrences that happen in the system you are
+        programming, which the system tells you about so your code can react to
+        them. Examples include user interactions like clicks, form submissions,
+        and keyboard input, as well as system-generated events like page load
+        and resize.
+      </p>
+      <p>
+        In JavaScript, you can listen for events on DOM elements using event
+        listeners. An event listener is a function that will be called whenever
+        the specified event occurs on the target element.
+      </p>
+      <p>For example, to listen for a click event on a button:</p>
+      <button id="btn" type="button">Click Me</button>
+      <div id="event-bubbling">
+        <h2>Event Bubbling</h2>
+        <p>
+          Event bubbling is a type of event propagation in the DOM where an event
+          starts at the most specific element (the target) and then bubbles up to
+          its ancestors in the DOM tree. When an event occurs on an element, it
+          first triggers any event listeners on that element, and then it
+          propagates (bubbles up) to its parent, then grandparent, and so on
+          until it reaches the root of the document.
+        </p>
+      <ul id="parent">
+        <li>
+          <img
+            width="100"
+            height="100"
+            src="https://images.pexels.com/photos/2027697/pexels-photo-2027697.jpeg"
+            alt="Image"
+            id="child-1"
+          />
+        </li>
+        <li>
+          <img
+            width="100"
+            height="100"
+            src="https://images.pexels.com/photos/30462129/pexels-photo-30462129.jpeg"
+            alt="Image"
+            id="child-2"
+          />
+        </li>
+        <li>
+          <img
+            width="100"
+            height="100"
+            src="https://images.pexels.com/photos/30486091/pexels-photo-30486091.png"
+            alt="Image"
+            id="child-3"
+          />
+        </li>
+        <li>
+          <img
+            width="100"
+            height="100"
+            src="https://images.pexels.com/photos/20629934/pexels-photo-20629934.jpeg"
+            alt="Image"
+            id="child-4"
+          />
+        </li>
+      </ul>
+      <!-- Event Delegation -->
+       <div id="event-delegation">
+        <h2>Event Delegation</h2>
+        <p>
+          Event delegation is a technique in JavaScript where you attach a single
+          event listener to a parent element instead of attaching multiple event
+          listeners to individual child elements. The event listener on the
+          parent element can then handle events that bubble up from its child
+          elements, allowing you to manage events more efficiently and with less
+          code.
+        </p>
+        <p>
+          This technique is particularly useful when you have a large number of
+          child elements or when child elements are added dynamically to the DOM,
+          as it avoids the need to attach event listeners to each individual
+          child element.
+        </p>
+        <ul id="parent-delegation">
+          <li id="child-1-delegation">Child 1</li>
+          <li id="child-2-delegation">Child 2</li>
+          <li id="child-3-delegation">Child 3</li>
+          <li id="child-4-delegation">Child 4</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="./eventBubbling.js"></script> -->
+    <script src="./eventCapturing.js"></script>
+    <!-- <script src="./eventDelegation.js"></script> -->
+    <!-- <script src="./eventObject.js"></script> -->
+  </body>
+</html>
