@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Mouse, Keyboard</title>
+  </head>
+  <body>
+    <h1>DOM Events</h1>
+    <div class="myDiv">
+      <p>This is a div element.</p>
+    </div>
+    <button id="btn">Click to change background</button>
+    <button id="clickBtn">Click Me</button>
+    <p id="output"></p>
+
+    <div
+      id="hoverDiv"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin-top: 20px;
+      "
+    >
+      Hover over me!
+    </div>
+
+    <div>
+      <button id="dragBtn">Drag Me</button>
+    </div>
+
+    <div
+      id="enterDiv"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin-top: 20px;
+      "
+    >
+      Mouse enter me!
+    </div>
+
+    <button id="dblClickBtn">Double Click Me</button>
+
+    <script src="events.js"></script>
+    <script src="mouseEvents.js"></script>
+    <script src="keyboardEvents.js"></script>
+  </body>
+</html>

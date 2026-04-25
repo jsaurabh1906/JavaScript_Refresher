@@ -1,0 +1,13 @@
+HTML Events
+
+HTML events are things that happen to HTML elements.
+
+Examples:
+
+1. An HTML button is clicked
+2. A web page has finished loading
+3. The mouse moves over an element
+4. A keyboard key is pressed
+5. An HTML input field is changed
+
+HTML DOM allows JavaScript to react to HTML events:
