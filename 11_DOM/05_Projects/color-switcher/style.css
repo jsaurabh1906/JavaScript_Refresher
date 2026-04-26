@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.color-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Button Colors */
+.color-btn:nth-child(1) {
+  background: #ff6b6b;
+}
+.color-btn:nth-child(2) {
+  background: #4ecdc4;
+}
+.color-btn:nth-child(3) {
+  background: #ffe66d;
+  color: black;
+}
+.color-btn:nth-child(4) {
+  background: #1a535c;
+}
+
+#color-code {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
