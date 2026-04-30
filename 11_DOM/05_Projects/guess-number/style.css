@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 8px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  font-weight: bold;
+  margin-top: 10px;
+}
